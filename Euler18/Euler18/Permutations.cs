@@ -15,10 +15,10 @@ namespace Euler18
         /// </summary>
         /// <param name="numberOfPermutations">number of permutations</param>
         /// <usecase result="2783915460">Run(1000000)</usecase>
-        /// <usecase result="0358926471">Run(100000)</usecase>
-        /// <usecase result="0123465789">Run(25)</usecase>
-        /// <usecase result="0123495786">Run(100)</usecase>
-        /// <usecase result="0726348591">Run(250000)</usecase>
+        /// <usecase result="3042875169">Run(100000)</usecase>
+        /// <usecase result="3042895167">Run(25)</usecase>
+        /// <usecase result="3042975681">Run(100)</usecase>
+        /// <usecase result="3749102568">Run(250000)</usecase>
         /// <returns>solution</returns>
         public string Run(int numberOfPermutations)
         {
@@ -64,9 +64,16 @@ namespace Euler18
         /// <usecase result="45616">GetTable(new int[] {4,5,6,1,6})</usecase>
         /// <usecase result="14567261">GetTable(new int[] {1,4,5,6,7,2,6,1})</usecase>
         /// <returns>Elements of the table</returns>
-        protected string GetTable(int[] permutation)
+        protected string GetTable(int[] table)
         {
-            throw new NotImplementedException();
+            string solution = string.Empty;
+
+            foreach (int i in table)
+            {
+                solution = string.Format("{0}{1}", solution, i.ToString());
+            }
+
+            return solution;
         }
 
         /// <summary>
