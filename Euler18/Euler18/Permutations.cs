@@ -60,7 +60,7 @@ namespace Euler18
         /// <summary>
         /// Gets elements of the table.
         /// </summary>
-        /// <usecase result="123">GetTable(new int[] {1,2,4})</usecase>
+        /// <usecase result="124">GetTable(new int[] {1,2,4})</usecase>
         /// <usecase result="45616">GetTable(new int[] {4,5,6,1,6})</usecase>
         /// <usecase result="14567261">GetTable(new int[] {1,4,5,6,7,2,6,1})</usecase>
         /// <returns>Elements of the table</returns>

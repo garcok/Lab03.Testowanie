@@ -57,5 +57,24 @@ namespace Euler18.Tests
             CollectionAssert.AreEqual(expected2, table2, "Error with table2");
             CollectionAssert.AreEqual(expected3, table3, "Error with table3");
         }
+
+        [TestMethod]
+        public void GetTableTest()
+        {
+            // Expected values
+            string expected124 = "124";
+            string expected45616 = "45616";
+            string expected14567261 = "14567261";
+
+            // Tables
+            string result124 = base.GetTable(new int[] { 1, 2, 4 });
+            string result45616 = base.GetTable(new int[] { 4, 5, 6, 1, 6 });
+            string result14567261 = base.GetTable(new int[] { 1, 4, 5, 6, 7, 2, 6, 1 });
+
+            // Asserts
+            Assert.AreEqual(expected124, result124, "Error with table {1,2,4}");
+            Assert.AreEqual(expected45616, result45616, "Error with table {4,5,6,1,6}");
+            Assert.AreEqual(expected14567261, result14567261, "Error with table {1,4,5,6,7,2,6,1}");
+        }
     }
 }
