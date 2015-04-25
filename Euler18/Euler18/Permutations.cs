@@ -64,7 +64,7 @@ namespace Euler18
         /// <usecase result="45616">GetTable(new int[] {4,5,6,1,6})</usecase>
         /// <usecase result="14567261">GetTable(new int[] {1,4,5,6,7,2,6,1})</usecase>
         /// <returns>Elements of the table</returns>
-        private string GetTable(int[] permutation)
+        protected string GetTable(int[] permutation)
         {
             throw new NotImplementedException();
         }
@@ -78,7 +78,7 @@ namespace Euler18
         /// <usecase table="{5,4,6,1,6}">Swap(0, 1, new int[] {4,5,6,1,6})</usecase>
         /// <usecase table="{1,4,6,5,7,2,6,1}">Swap(2, 3, new int[] {1,4,5,6,7,2,6,1})</usecase>
         /// <param name="table">table</param>
-        private void Swap(int p1, int p2, int[] table)
+        protected void Swap(int p1, int p2, int[] table)
         {
             throw new NotImplementedException();
         }
