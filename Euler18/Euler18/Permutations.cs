@@ -1,6 +1,12 @@
-﻿namespace Euler18
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Euler18
 {
-    interface IPermutations
+    public class Permutations : IPermutations
     {
         /// <summary>
         /// Gets solutions of the problem
@@ -12,6 +18,9 @@
         /// <usecase result="0123495786">Run(100)</usecase>
         /// <usecase result="0726348591">Run(250000)</usecase>
         /// <returns>solution</returns>
-        string Run(int numberOfPermutations);
+        public string Run(int numberOfPermutations)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
