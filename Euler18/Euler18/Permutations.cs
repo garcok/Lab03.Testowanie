@@ -20,7 +20,7 @@ namespace Euler18
         /// <returns>solution</returns>
         public string Run(int numberOfPermutations)
         {
-            throw new NotImplementedException();
+            return string.Empty;
         }
     }
 }
