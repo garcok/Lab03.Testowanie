@@ -3,11 +3,17 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Euler18.Tests
 {
+    /// <summary>
+    /// Tests for Permutation Class
+    /// </summary>
     [TestClass]
     public class PermutationsTests : Permutations
     {
         Permutations permutations = new Permutations();
 
+        /// <summary>
+        /// Tests for Run method
+        /// </summary>
         [TestMethod]
         public void RunTest()
         {
@@ -34,6 +40,9 @@ namespace Euler18.Tests
 
         }
 
+        /// <summary>
+        /// Tests for Swap method
+        /// </summary>
         [TestMethod]
         public void SwapTest()
         {
@@ -58,6 +67,9 @@ namespace Euler18.Tests
             CollectionAssert.AreEqual(expected3, table3, "Error with table3");
         }
 
+        /// <summary>
+        /// Tests for GetTable method
+        /// </summary>
         [TestMethod]
         public void GetTableTest()
         {
